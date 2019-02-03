@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		242AF36C542876CF413D1D5BC3666FCA /* AcceptSDKTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F83FADDFAE60243621C3E4F08250E2 /* AcceptSDKTokenResponse.swift */; };
+		3B639FAA73FF2E64EB90CC2E821B969C /* MerchantAuthenticaton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C2D44CAFC7802D98718764212004E8 /* MerchantAuthenticaton.swift */; };
+		450BEC3D2BF245113B6D24682174D44C /* AcceptSDKHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EECDB78A21613A57C7610A6A2DD5E9 /* AcceptSDKHandler.swift */; };
+		473D3B93C8C04C1757ACAC2AB8939EC8 /* AcceptSDKCardFieldsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BA2A39854273136320AE67F08C9415 /* AcceptSDKCardFieldsValidator.swift */; };
+		4F9C0EF6BE47F95CCFEDCD74C56D8842 /* AuthorizeNetAccept-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4BC1ED97C3FF7CC852669D6A30AF2DE /* AuthorizeNetAccept-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53EC6EEA5E7D7FBC17578B66B48FC087 /* AcceptSDKTokenInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6026418A66E0B88C96CBFB349956B0 /* AcceptSDKTokenInterface.swift */; };
+		54164C7A5FAD0CDAF8681E69A6A90E47 /* AcceptSDKSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA85B1FF51971E79F983FD1DBE7E4C30 /* AcceptSDKSettings.swift */; };
+		5C8BA555879F9EE66F2FF9EE7936EE03 /* AcceptSDKHttpConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A4A77A856EF23A6C41D9377E00A7F5 /* AcceptSDKHttpConnection.swift */; };
+		60E2CB08E6B7D14DFEDE5B7E708733F3 /* Pods-RNAuthorizeNet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13342040F61870E44D74C826508F164C /* Pods-RNAuthorizeNet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68A1520B4DA14420D83AA94FA8F273E6 /* AcceptSDKBaseURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62643F5C2224CCC730A5E9E155E532D8 /* AcceptSDKBaseURLBuilder.swift */; };
+		6AE03167C2AB3F60EE29FE86C62207E5 /* AcceptSDKTokenAPIBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D9FAAB7C0CC33265AF0CD6FB1DE93 /* AcceptSDKTokenAPIBuilder.swift */; };
+		759A725D42B0087EC1D68E6968149C06 /* AcceptSDKPaymentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C28AEF3F0672BFB46FFEBD3252B54DE /* AcceptSDKPaymentRequest.swift */; };
+		7B308F0A1A661A9ADE76F3ABA754E4C3 /* AcceptSDKInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2085516826EBF171F0C77BCA69D5C2 /* AcceptSDKInternal.swift */; };
+		803075BF3F9C482F3E5C714D2EFCB9E4 /* AcceptSDKStringValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111FC727DAFA4032D325A49874CE2D63 /* AcceptSDKStringValidator.swift */; };
+		882C7ED1D02DE4CE3743ADDEA17794F7 /* AcceptSDKErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C37399931F99531719E34A18632D5F /* AcceptSDKErrorResponse.swift */; };
+		8D09212CB0484DC03D0ADB850D19AF48 /* AccepSDKtHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F7959EC9BC4A0050D113F790280A0E /* AccepSDKtHttp.swift */; };
+		97E1DCD2A90FA11126707652EA4C1678 /* AcceptSDKTokenInterfaceBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DEEFA47CE91679255AF94A1423773F /* AcceptSDKTokenInterfaceBuilder.swift */; };
+		A099939FC96BCCAB7631C8082A01BA53 /* FingerPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8388532E5B26E4010920B350AF0880FA /* FingerPrint.swift */; };
+		A341F9C28D54716C5151D2045A32AA9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		B4A171D23B368B0A194578E6FD9D42ED /* AuthorizeNetAccept-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC552ABD07B39488C6D3F367FBF0C54 /* AuthorizeNetAccept-dummy.m */; };
+		B5EA89B63FA52C916562CD0884028E0A /* SecurePaymentContainerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3335EB4F8AAC9D0E9902CEAB811151B8 /* SecurePaymentContainerRequest.swift */; };
+		BA57576D34C61959CCD95D1302BF821B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		CBD81B57883FE4DFCBEAD7ACE0EB2C2D /* AcceptSDKBaseInterfaceBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C338F3641D69D8CCC9199DB0B50CF349 /* AcceptSDKBaseInterfaceBuilder.swift */; };
+		D37D807F6AE36D61ECF00C7AD1F3BD6C /* AcceptSDKBaseInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ADA597E6FFE02A4897D10147873FA3 /* AcceptSDKBaseInterface.swift */; };
+		DAC9E47535001A0B5638F09A8CEC135E /* Pods-RNAuthorizeNet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F40F30D1CCE412FA7989854E4924772A /* Pods-RNAuthorizeNet-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F48E043B398C7FC060350001F99EED6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A55533957FF181E5D504D9E4A28316D;
+			remoteInfo = AuthorizeNetAccept;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08EECDB78A21613A57C7610A6A2DD5E9 /* AcceptSDKHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcceptSDKHandler.swift; path = AcceptSDK/AcceptSDKHandler.swift; sourceTree = "<group>"; };
+		0C28AEF3F0672BFB46FFEBD3252B54DE /* AcceptSDKPaymentRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcceptSDKPaymentRequest.swift; path = AcceptSDK/Request/AcceptSDKPaymentRequest.swift; sourceTree = "<group>"; };
+		111FC727DAFA4032D325A49874CE2D63 /* AcceptSDKStringValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcceptSDKStringValidator.swift; path = AcceptSDK/Validators/AcceptSDKStringValidator.swift; sourceTree = "<group>"; };
+		13342040F61870E44D74C826508F164C /* Pods-RNAuthorizeNet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RNAuthorizeNet-umbrella.h"; sourceTree = "<group>"; };
+		15DEEFA47CE91679255AF94A1423773F /* AcceptSDKTokenInterfaceBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcceptSDKTokenInterfaceBuilder.swift; path = AcceptSDK/AcceptBuilder/AcceptSDKTokenInterfaceBuilder.swift; sourceTree = "<group>"; };
+		1EE3626787F179ACEBD4C798C94321E3 /* Pods_RNAuthorizeNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNAuthorizeNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		226695520E8DFA8A765F3349C770281C /* Pods-RNAuthorizeNet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RNAuthorizeNet.modulemap"; sourceTree = "<group>"; };
+		2B2085516826EBF171F0C77BCA69D5C2 /* AcceptSDKInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcceptSDKInternal.swift; path = AcceptSDK/AcceptSDKInternal.swift; sourceTree = "<group>"; };
+		3335EB4F8AAC9D0E9902CEAB811151B8 /* SecurePaymentContainerRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecurePaymentContainerRequest.swift; path = AcceptSDK/Request/SecurePaymentContainerRequest.swift; sourceTree = "<group>"; };
+		36A4A77A856EF23A6C41D9377E00A7F5 /* AcceptSDKHttpConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcceptSDKHttpConnection.swift; path = AcceptSDK/Network/AcceptSDKHttpConnection.swift; sourceTree = "<group>"; };
+		37251D4D750AC9D0990A1E48125DE125 /* Pods-RNAuthorizeNet-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RNAuthorizeNet-acknowledgements.markdown"; sourceTree = "<group>"; };
+		47ADA597E6FFE02A4897D10147873FA3 /* AcceptSDKBaseInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcceptSDKBaseInterface.swift; path = AcceptSDK/Interface/AcceptSDKBaseInterface.swift; sourceTree = "<group>"; };
+		579D9FAAB7C0CC33265AF0CD6FB1DE93 /* AcceptSDKTokenAPIBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcceptSDKTokenAPIBuilder.swift; path = AcceptSDK/AcceptBuilder/AcceptSDKTokenAPIBuilder.swift; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		62643F5C2224CCC730A5E9E155E532D8 /* AcceptSDKBaseURLBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcceptSDKBaseURLBuilder.swift; path = AcceptSDK/AcceptBuilder/AcceptSDKBaseURLBuilder.swift; sourceTree = "<group>"; };
+		653FDBDA52AFD94637608E34617DA349 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D399098BE827F7588E6DC8B503D5272 /* Pods-RNAuthorizeNet-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RNAuthorizeNet-acknowledgements.plist"; sourceTree = "<group>"; };
+		7B4581B5167D95FC403383F439F73A20 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8388532E5B26E4010920B350AF0880FA /* FingerPrint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FingerPrint.swift; path = AcceptSDK/Request/FingerPrint.swift; sourceTree = "<group>"; };
+		92D5B8C0D8C1584EC747305C8B2AB331 /* AuthorizeNetAccept.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AuthorizeNetAccept.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1F7959EC9BC4A0050D113F790280A0E /* AccepSDKtHttp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccepSDKtHttp.swift; path = AcceptSDK/Network/AccepSDKtHttp.swift; sourceTree = "<group>"; };
+		A80DD9E1977F8DCBBE432122A0DDCCA7 /* Pods-RNAuthorizeNet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RNAuthorizeNet.release.xcconfig"; sourceTree = "<group>"; };
+		AA85B1FF51971E79F983FD1DBE7E4C30 /* AcceptSDKSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcceptSDKSettings.swift; path = AcceptSDK/AcceptSDKSettings.swift; sourceTree = "<group>"; };
+		B38DA8077C45439180D3A960F4B13D4A /* AuthorizeNetAccept.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AuthorizeNetAccept.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B43E1D1D276E1D21BA3EB1998EF29AEE /* AuthorizeNetAccept.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AuthorizeNetAccept.modulemap; sourceTree = "<group>"; };
+		B4BC1ED97C3FF7CC852669D6A30AF2DE /* AuthorizeNetAccept-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AuthorizeNetAccept-umbrella.h"; sourceTree = "<group>"; };
+		B9C2D44CAFC7802D98718764212004E8 /* MerchantAuthenticaton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MerchantAuthenticaton.swift; path = AcceptSDK/Request/MerchantAuthenticaton.swift; sourceTree = "<group>"; };
+		C338F3641D69D8CCC9199DB0B50CF349 /* AcceptSDKBaseInterfaceBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcceptSDKBaseInterfaceBuilder.swift; path = AcceptSDK/AcceptBuilder/AcceptSDKBaseInterfaceBuilder.swift; sourceTree = "<group>"; };
+		C5C37399931F99531719E34A18632D5F /* AcceptSDKErrorResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcceptSDKErrorResponse.swift; path = AcceptSDK/Response/AcceptSDKErrorResponse.swift; sourceTree = "<group>"; };
+		D8F83FADDFAE60243621C3E4F08250E2 /* AcceptSDKTokenResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcceptSDKTokenResponse.swift; path = AcceptSDK/Response/AcceptSDKTokenResponse.swift; sourceTree = "<group>"; };
+		D9F2B13B46BBECA794124578AEF8AAB3 /* AuthorizeNetAccept-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AuthorizeNetAccept-prefix.pch"; sourceTree = "<group>"; };
+		DCC2352805B3B6EDE77ECF6263E4BC57 /* Pods-RNAuthorizeNet-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RNAuthorizeNet-resources.sh"; sourceTree = "<group>"; };
+		E8EA6AD1DF30305C9FF2927F9318FEAC /* Pods-RNAuthorizeNet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RNAuthorizeNet.debug.xcconfig"; sourceTree = "<group>"; };
+		EF6026418A66E0B88C96CBFB349956B0 /* AcceptSDKTokenInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcceptSDKTokenInterface.swift; path = AcceptSDK/Interface/AcceptSDKTokenInterface.swift; sourceTree = "<group>"; };
+		F1BA2A39854273136320AE67F08C9415 /* AcceptSDKCardFieldsValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcceptSDKCardFieldsValidator.swift; path = AcceptSDK/Validators/AcceptSDKCardFieldsValidator.swift; sourceTree = "<group>"; };
+		F40F30D1CCE412FA7989854E4924772A /* Pods-RNAuthorizeNet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RNAuthorizeNet-dummy.m"; sourceTree = "<group>"; };
+		FDC552ABD07B39488C6D3F367FBF0C54 /* AuthorizeNetAccept-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AuthorizeNetAccept-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		459D7A1AA120A5C2BF231158433184BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A341F9C28D54716C5151D2045A32AA9B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1CA6B45C174DFCE958FA68856D56C9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA57576D34C61959CCD95D1302BF821B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1314D8020A5DF1A504A842320D884BB8 /* Pods-RNAuthorizeNet */ = {
+			isa = PBXGroup;
+			children = (
+				7B4581B5167D95FC403383F439F73A20 /* Info.plist */,
+				226695520E8DFA8A765F3349C770281C /* Pods-RNAuthorizeNet.modulemap */,
+				37251D4D750AC9D0990A1E48125DE125 /* Pods-RNAuthorizeNet-acknowledgements.markdown */,
+				6D399098BE827F7588E6DC8B503D5272 /* Pods-RNAuthorizeNet-acknowledgements.plist */,
+				F40F30D1CCE412FA7989854E4924772A /* Pods-RNAuthorizeNet-dummy.m */,
+				DCC2352805B3B6EDE77ECF6263E4BC57 /* Pods-RNAuthorizeNet-resources.sh */,
+				13342040F61870E44D74C826508F164C /* Pods-RNAuthorizeNet-umbrella.h */,
+				E8EA6AD1DF30305C9FF2927F9318FEAC /* Pods-RNAuthorizeNet.debug.xcconfig */,
+				A80DD9E1977F8DCBBE432122A0DDCCA7 /* Pods-RNAuthorizeNet.release.xcconfig */,
+			);
+			name = "Pods-RNAuthorizeNet";
+			path = "Target Support Files/Pods-RNAuthorizeNet";
+			sourceTree = "<group>";
+		};
+		42FDB2A81F63B78ECD393EE739FDFAA9 /* AuthorizeNetAccept */ = {
+			isa = PBXGroup;
+			children = (
+				A1F7959EC9BC4A0050D113F790280A0E /* AccepSDKtHttp.swift */,
+				47ADA597E6FFE02A4897D10147873FA3 /* AcceptSDKBaseInterface.swift */,
+				C338F3641D69D8CCC9199DB0B50CF349 /* AcceptSDKBaseInterfaceBuilder.swift */,
+				62643F5C2224CCC730A5E9E155E532D8 /* AcceptSDKBaseURLBuilder.swift */,
+				F1BA2A39854273136320AE67F08C9415 /* AcceptSDKCardFieldsValidator.swift */,
+				C5C37399931F99531719E34A18632D5F /* AcceptSDKErrorResponse.swift */,
+				08EECDB78A21613A57C7610A6A2DD5E9 /* AcceptSDKHandler.swift */,
+				36A4A77A856EF23A6C41D9377E00A7F5 /* AcceptSDKHttpConnection.swift */,
+				2B2085516826EBF171F0C77BCA69D5C2 /* AcceptSDKInternal.swift */,
+				0C28AEF3F0672BFB46FFEBD3252B54DE /* AcceptSDKPaymentRequest.swift */,
+				AA85B1FF51971E79F983FD1DBE7E4C30 /* AcceptSDKSettings.swift */,
+				111FC727DAFA4032D325A49874CE2D63 /* AcceptSDKStringValidator.swift */,
+				579D9FAAB7C0CC33265AF0CD6FB1DE93 /* AcceptSDKTokenAPIBuilder.swift */,
+				EF6026418A66E0B88C96CBFB349956B0 /* AcceptSDKTokenInterface.swift */,
+				15DEEFA47CE91679255AF94A1423773F /* AcceptSDKTokenInterfaceBuilder.swift */,
+				D8F83FADDFAE60243621C3E4F08250E2 /* AcceptSDKTokenResponse.swift */,
+				8388532E5B26E4010920B350AF0880FA /* FingerPrint.swift */,
+				B9C2D44CAFC7802D98718764212004E8 /* MerchantAuthenticaton.swift */,
+				3335EB4F8AAC9D0E9902CEAB811151B8 /* SecurePaymentContainerRequest.swift */,
+				DC3E445FBC3F786394F3F8C71CED4FCC /* Support Files */,
+			);
+			path = AuthorizeNetAccept;
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				EB5AE2C0311CF4425F4F7BE6532BC6B9 /* Pods */,
+				B6D0C553A634E01315AFF9E24C18D235 /* Products */,
+				E6B4C2448C62B78D94E5DB5342E406C5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B6D0C553A634E01315AFF9E24C18D235 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B38DA8077C45439180D3A960F4B13D4A /* AuthorizeNetAccept.framework */,
+				1EE3626787F179ACEBD4C798C94321E3 /* Pods_RNAuthorizeNet.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC3E445FBC3F786394F3F8C71CED4FCC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B43E1D1D276E1D21BA3EB1998EF29AEE /* AuthorizeNetAccept.modulemap */,
+				92D5B8C0D8C1584EC747305C8B2AB331 /* AuthorizeNetAccept.xcconfig */,
+				FDC552ABD07B39488C6D3F367FBF0C54 /* AuthorizeNetAccept-dummy.m */,
+				D9F2B13B46BBECA794124578AEF8AAB3 /* AuthorizeNetAccept-prefix.pch */,
+				B4BC1ED97C3FF7CC852669D6A30AF2DE /* AuthorizeNetAccept-umbrella.h */,
+				653FDBDA52AFD94637608E34617DA349 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AuthorizeNetAccept";
+			sourceTree = "<group>";
+		};
+		E6B4C2448C62B78D94E5DB5342E406C5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1314D8020A5DF1A504A842320D884BB8 /* Pods-RNAuthorizeNet */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		EB5AE2C0311CF4425F4F7BE6532BC6B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42FDB2A81F63B78ECD393EE739FDFAA9 /* AuthorizeNetAccept */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B3FD83461F2E7C259B5BEFAFABF08C66 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F9C0EF6BE47F95CCFEDCD74C56D8842 /* AuthorizeNetAccept-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F91DC0F0FD0A276A2783BFE059F626C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60E2CB08E6B7D14DFEDE5B7E708733F3 /* Pods-RNAuthorizeNet-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1A55533957FF181E5D504D9E4A28316D /* AuthorizeNetAccept */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64C75B0CAE4C245D1B327037E928360B /* Build configuration list for PBXNativeTarget "AuthorizeNetAccept" */;
+			buildPhases = (
+				68F386C185868D8EC6244F0A09FEFC6F /* Sources */,
+				459D7A1AA120A5C2BF231158433184BC /* Frameworks */,
+				B3FD83461F2E7C259B5BEFAFABF08C66 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AuthorizeNetAccept;
+			productName = AuthorizeNetAccept;
+			productReference = B38DA8077C45439180D3A960F4B13D4A /* AuthorizeNetAccept.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E9347C7DDC4AAC616107ECA3E10EC4E2 /* Pods-RNAuthorizeNet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6898743E9A95A50451FA25F7F8E9D7C0 /* Build configuration list for PBXNativeTarget "Pods-RNAuthorizeNet" */;
+			buildPhases = (
+				1DC4EF1B20424E53CC810106FC68C726 /* Sources */,
+				F1CA6B45C174DFCE958FA68856D56C9E /* Frameworks */,
+				F91DC0F0FD0A276A2783BFE059F626C3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE8FCA3FBBC51CF1BA1E6DBC84D1175B /* PBXTargetDependency */,
+			);
+			name = "Pods-RNAuthorizeNet";
+			productName = "Pods-RNAuthorizeNet";
+			productReference = 1EE3626787F179ACEBD4C798C94321E3 /* Pods_RNAuthorizeNet.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "RNAuthorizeNetPods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B6D0C553A634E01315AFF9E24C18D235 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A55533957FF181E5D504D9E4A28316D /* AuthorizeNetAccept */,
+				E9347C7DDC4AAC616107ECA3E10EC4E2 /* Pods-RNAuthorizeNet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DC4EF1B20424E53CC810106FC68C726 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC9E47535001A0B5638F09A8CEC135E /* Pods-RNAuthorizeNet-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68F386C185868D8EC6244F0A09FEFC6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D09212CB0484DC03D0ADB850D19AF48 /* AccepSDKtHttp.swift in Sources */,
+				D37D807F6AE36D61ECF00C7AD1F3BD6C /* AcceptSDKBaseInterface.swift in Sources */,
+				CBD81B57883FE4DFCBEAD7ACE0EB2C2D /* AcceptSDKBaseInterfaceBuilder.swift in Sources */,
+				68A1520B4DA14420D83AA94FA8F273E6 /* AcceptSDKBaseURLBuilder.swift in Sources */,
+				473D3B93C8C04C1757ACAC2AB8939EC8 /* AcceptSDKCardFieldsValidator.swift in Sources */,
+				882C7ED1D02DE4CE3743ADDEA17794F7 /* AcceptSDKErrorResponse.swift in Sources */,
+				450BEC3D2BF245113B6D24682174D44C /* AcceptSDKHandler.swift in Sources */,
+				5C8BA555879F9EE66F2FF9EE7936EE03 /* AcceptSDKHttpConnection.swift in Sources */,
+				7B308F0A1A661A9ADE76F3ABA754E4C3 /* AcceptSDKInternal.swift in Sources */,
+				759A725D42B0087EC1D68E6968149C06 /* AcceptSDKPaymentRequest.swift in Sources */,
+				54164C7A5FAD0CDAF8681E69A6A90E47 /* AcceptSDKSettings.swift in Sources */,
+				803075BF3F9C482F3E5C714D2EFCB9E4 /* AcceptSDKStringValidator.swift in Sources */,
+				6AE03167C2AB3F60EE29FE86C62207E5 /* AcceptSDKTokenAPIBuilder.swift in Sources */,
+				53EC6EEA5E7D7FBC17578B66B48FC087 /* AcceptSDKTokenInterface.swift in Sources */,
+				97E1DCD2A90FA11126707652EA4C1678 /* AcceptSDKTokenInterfaceBuilder.swift in Sources */,
+				242AF36C542876CF413D1D5BC3666FCA /* AcceptSDKTokenResponse.swift in Sources */,
+				B4A171D23B368B0A194578E6FD9D42ED /* AuthorizeNetAccept-dummy.m in Sources */,
+				A099939FC96BCCAB7631C8082A01BA53 /* FingerPrint.swift in Sources */,
+				3B639FAA73FF2E64EB90CC2E821B969C /* MerchantAuthenticaton.swift in Sources */,
+				B5EA89B63FA52C916562CD0884028E0A /* SecurePaymentContainerRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE8FCA3FBBC51CF1BA1E6DBC84D1175B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AuthorizeNetAccept;
+			target = 1A55533957FF181E5D504D9E4A28316D /* AuthorizeNetAccept */;
+			targetProxy = 6F48E043B398C7FC060350001F99EED6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03AB382A41FA7A58CAADDA9215F55CD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5CBB0A2D5A04DBFC2B9CB4E40A518B43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A80DD9E1977F8DCBBE432122A0DDCCA7 /* Pods-RNAuthorizeNet.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RNAuthorizeNet/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RNAuthorizeNet/Pods-RNAuthorizeNet.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6FCAF6BDD58118EDF9C94C74C30D8F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8EA6AD1DF30305C9FF2927F9318FEAC /* Pods-RNAuthorizeNet.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RNAuthorizeNet/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RNAuthorizeNet/Pods-RNAuthorizeNet.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9B432089572A5C9B7C78DBA721E5BF88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		DA41B17F8FB61204259CF9854F7748A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92D5B8C0D8C1584EC747305C8B2AB331 /* AuthorizeNetAccept.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AuthorizeNetAccept/AuthorizeNetAccept-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AuthorizeNetAccept/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AuthorizeNetAccept/AuthorizeNetAccept.modulemap";
+				PRODUCT_MODULE_NAME = AuthorizeNetAccept;
+				PRODUCT_NAME = AuthorizeNetAccept;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DA9028D66CE07FB9FDB4565265933843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92D5B8C0D8C1584EC747305C8B2AB331 /* AuthorizeNetAccept.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AuthorizeNetAccept/AuthorizeNetAccept-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AuthorizeNetAccept/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AuthorizeNetAccept/AuthorizeNetAccept.modulemap";
+				PRODUCT_MODULE_NAME = AuthorizeNetAccept;
+				PRODUCT_NAME = AuthorizeNetAccept;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "RNAuthorizeNetPods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03AB382A41FA7A58CAADDA9215F55CD5 /* Debug */,
+				9B432089572A5C9B7C78DBA721E5BF88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64C75B0CAE4C245D1B327037E928360B /* Build configuration list for PBXNativeTarget "AuthorizeNetAccept" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA9028D66CE07FB9FDB4565265933843 /* Debug */,
+				DA41B17F8FB61204259CF9854F7748A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6898743E9A95A50451FA25F7F8E9D7C0 /* Build configuration list for PBXNativeTarget "Pods-RNAuthorizeNet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FCAF6BDD58118EDF9C94C74C30D8F77 /* Debug */,
+				5CBB0A2D5A04DBFC2B9CB4E40A518B43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:RNAuthorizeNet.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/Machowski/ReliantID/Mobile-FDA/KnoNow/node_modules/react-native-reliantid-authorize-net/ios/Pods/RNAuthorizeNetPods.xcodeproj">
+   </FileRef>
+</Workspace>
