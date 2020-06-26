@@ -13,6 +13,7 @@ import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.WritableMap;
 
 import net.authorize.acceptsdk.AcceptSDKApiClient;
+import net.authorize.acceptsdk.datamodel.common.Message;
 import net.authorize.acceptsdk.datamodel.merchant.ClientKeyBasedMerchantAuthentication;
 import net.authorize.acceptsdk.datamodel.transaction.CardData;
 import net.authorize.acceptsdk.datamodel.transaction.EncryptTransactionObject;
@@ -38,6 +39,8 @@ public class RNAuthorizeNetModule extends ReactContextBaseJavaModule {
   static String ACCOUNT_HOLDER_EMAIL = "ACCOUNT_HOLDER_EMAIL";
   static String DATA_DESCRIPTOR = "DATA_DESCRIPTOR";
   static String DATA_VALUE = "DATA_VALUE";
+  static String ERROR_CODE = "ERROR_CODE";
+  static String ERROR_TEXT = "ERROR_TEXT";
   private final ReactApplicationContext reactContext;
   private static Activity mCurrentActivity = null;
 
@@ -104,8 +107,13 @@ public class RNAuthorizeNetModule extends ReactContextBaseJavaModule {
       EncryptTransactionObject transactionObject = prepareTransactionObject(cardValue);
       apiClient.getTokenWithRequest(transactionObject, new EncryptTransactionCallback() {
         @Override
-        public void onErrorReceived(ErrorTransactionResponse error) {
-          responseCallBack.invoke(false,"Error while add card.");
+        public void onErrorReceived(ErrorTransactionResponse response) {
+          Message error = response.getFirstErrorMessage();
+          WritableMap errorResponse = Arguments.createMap();
+          errorResponse.putString(ERROR_CODE,error.getMessageCode());
+          errorResponse.putString(ERROR_TEXT,error.getMessageText());
+          // responseCallBack.invoke(false,"Error while add card.");
+          responseCallBack.invoke(false,errorResponse);
         }
 
         @Override
