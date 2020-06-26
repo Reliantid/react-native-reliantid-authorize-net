@@ -1,6 +1,6 @@
 {
   "name": "react-native-reliantid-authorize-net",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "`react-native-reliantid-authorize-net` is a package that allows you to: Fetch token by sending `card detail` to `AcceptSDK` for iOS and Android. You need to use this token to get the values of `DATA DESCRIPTOR` and `DATA VALUE` from the token.",
   "main": "index.js",
   "scripts": {
