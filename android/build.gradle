@@ -37,6 +37,6 @@ repositories {
 }
 
 dependencies {
-    compile 'com.facebook.react:react-native:+'
-    compile 'net.authorize:accept-sdk-android:1.0.2'
+    implementation 'com.facebook.react:react-native:+'
+    implementation 'net.authorize:accept-sdk-android:1.0.2'
 }
