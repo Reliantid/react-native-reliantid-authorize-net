@@ -1,0 +1,2 @@
+include ':accept-sdk'
+project(':accept-sdk').projectDir = new File(rootProject.projectDir, './accept-sdk')

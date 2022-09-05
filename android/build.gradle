@@ -2,7 +2,7 @@
 buildscript {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 
     dependencies {
@@ -32,11 +32,7 @@ android {
     }
 }
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
     implementation 'com.facebook.react:react-native:+'
-    implementation 'net.authorize:accept-sdk-android:1.0.2'
+    implementation files('./accept-sdk/accept-sdk-android-debug.aar')
 }
