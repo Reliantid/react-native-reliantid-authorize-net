@@ -1,5 +1,6 @@
-#import <AuthorizeNetAccept/AuthorizeNetAccept-Swift.h>
+//#import <AuthorizeNetAccept/AuthorizeNetAccept-Swift.h>
 #import "RNAuthorizeNet.h"
+@import AuthorizeNetAccept;
 
 @implementation RNAuthorizeNet
 

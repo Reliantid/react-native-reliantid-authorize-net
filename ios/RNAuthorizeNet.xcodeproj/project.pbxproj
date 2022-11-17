@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		843F57BC2678358D19028736 /* Pods_RNAuthorizeNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A311619900A577433E81A211 /* Pods_RNAuthorizeNet.framework */; };
 		B3E7B58A1CC2AC0600A0062D /* RNAuthorizeNet.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNAuthorizeNet.m */; };
 /* End PBXBuildFile section */
 
@@ -24,12 +23,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0259BAE86C4C2615785C0F08 /* Pods-RNAuthorizeNet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNAuthorizeNet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNAuthorizeNet/Pods-RNAuthorizeNet.debug.xcconfig"; sourceTree = "<group>"; };
 		134814201AA4EA6300B7C361 /* libRNAuthorizeNet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNAuthorizeNet.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A311619900A577433E81A211 /* Pods_RNAuthorizeNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNAuthorizeNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* RNAuthorizeNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNAuthorizeNet.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNAuthorizeNet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNAuthorizeNet.m; sourceTree = "<group>"; };
-		D7CE6757EE57E57834B6A81D /* Pods-RNAuthorizeNet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNAuthorizeNet.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNAuthorizeNet/Pods-RNAuthorizeNet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +33,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				843F57BC2678358D19028736 /* Pods_RNAuthorizeNet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +42,6 @@
 		060F4EE66FB331E27BB28368 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A311619900A577433E81A211 /* Pods_RNAuthorizeNet.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -66,18 +60,8 @@
 				B3E7B5881CC2AC0600A0062D /* RNAuthorizeNet.h */,
 				B3E7B5891CC2AC0600A0062D /* RNAuthorizeNet.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
-				BDFC04A85761C3738678BB7F /* Pods */,
 				060F4EE66FB331E27BB28368 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		BDFC04A85761C3738678BB7F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0259BAE86C4C2615785C0F08 /* Pods-RNAuthorizeNet.debug.xcconfig */,
-				D7CE6757EE57E57834B6A81D /* Pods-RNAuthorizeNet.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,12 +233,7 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0259BAE86C4C2615785C0F08 /* Pods-RNAuthorizeNet.debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
-				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -270,12 +249,7 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7CE6757EE57E57834B6A81D /* Pods-RNAuthorizeNet.release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
-				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,

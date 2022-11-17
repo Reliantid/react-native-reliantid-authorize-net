@@ -29,7 +29,7 @@ module.exports = {
     'react-native-reliantid-authorize-net': {
       platforms: {
         android: null,
-        ios: null,
+        // ios: null,
       },
     },
   },
@@ -38,7 +38,10 @@ module.exports = {
 
 #### iOS
 
-1. In your Podfile add `pod 'RNAuthorizeNet', :path => '../node_modules/react-native-reliantid-authorize-net'`
+1. Package is using autolinking with Cocoapods. 
+```
+pod install
+```
 
 #### Android
 

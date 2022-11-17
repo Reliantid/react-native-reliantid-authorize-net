@@ -15,16 +15,14 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "11.0"
 
   s.source       = { :git => "https://github.com/Reliantid/react-native-reliantid-authorize-net.git", :tag => "v#{s.version}" }
-  # s.source_files  = "ios/**/*.*"
+  s.source_files  = "ios/*.{h,m}"
 
   s.pod_target_xcconfig = {
     "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "arm64",
     "ONLY_ACTIVE_ARCH" => "YES"
   }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  # s.framework = "AcceptSDK"
-  s.vendored_frameworks = "Frameworks/AcceptSDK.framework"
-  s.static_framework = true
 
-  s.dependency "AuthorizeNetAccept", "~> 0.4.0"
+  s.dependency "React"
+  s.dependency "AuthorizeNetAccept", "~> 0.5.0"
 end
