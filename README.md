@@ -12,53 +12,19 @@
 
 ### Installation
 
-#### RN60+
-
-Create `react-native.config.js` (if not already present) in the root folder of your project and disable autolinking for this package
-
-```
-// NOTE: guide to solving autolinking issues on iOS: https://github.com/facebook/react-native/issues/26665#issuecomment-571082076
-module.exports = {
-  project: {
-    ios: {},
-    android: {},
-  },
-  // list of dependencies that does not support autolinking
-  dependencies: {
-    // Disable autolinking per platform with 'null'
-    'react-native-reliantid-authorize-net': {
-      platforms: {
-        android: null,
-        // ios: null,
-      },
-    },
-  },
-}
-```
-
-#### iOS
-
-1. Package is using autolinking with Cocoapods. 
-```
-pod install
-```
+note: if for some reason you need manual linging use version 1.2 of this package
 
 #### Android
 
-1. Open up `android/app/src/main/java/[...]/MainActivity.java`
+Package is using autolinking.
 
-- Add `import com.reactlibrary.authorizenet.RNAuthorizeNetPackage;` to the imports at the top of the file
-- Add `new RNAuthorizeNetPackage()` to the list returned by the `getPackages()` method
+#### iOS
 
-2. Append the following lines to `android/settings.gradle`:
-   ```
-   include ':react-native-reliantid-authorize-net'
-   project(':react-native-reliantid-authorize-net').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-reliantid-authorize-net/android')
-   ```
-3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
-   ```
-     implementation project(':react-native-reliantid-authorize-net')
-   ```
+Package is using autolinking with Cocoapods.
+
+```
+pod install
+```
 
 ## Usage
 
